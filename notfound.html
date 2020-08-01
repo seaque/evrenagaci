@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+    
+    <head>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Sadece arama butonu simgesi için-->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>          
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>   
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <style>
+        .oswald, h2, h3{
+            font-family: 'Oswald', sans-serif;
+        }
+        .btn-secondary {
+            background-color: #400B60;
+        }
+        .footer-bg {
+            background: linear-gradient(to bottom, #37033D 30%, #000000 90%);
+        }
+        .imgcontainer {
+            position: relative;
+        }
+        .not-found-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px black;
+        }
+        .resp-text {
+            font-size: calc(100% + 4vw + 3vh);
+        }
+        .nav-item a:hover {
+            border-bottom: solid red 1px;
+        }
+        @media screen and (max-width: 800px) {     
+            .form-control {
+                width: 80%;
+            }
+            .bg-light {
+                opacity: 0.9;
+            }
+            
+    </style>    
+        
+    <title>Evren Ağacı – Astronomi Bilgi Sitesi </title>
+        
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+            <div class="container-fluid">   
+            <a class="navbar-brand" href="index.html"> <img src="images/logo.png" width="70px"> </a>
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenav1">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsenav1">
+            <ul class="navbar-nav mx-auto nav-fill">
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="#">GÜNCEL KONULAR</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">BİLİM İNSANLARI</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="page2.html">ISS CANLI YAYIN</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">GALERİ</a> </li>
+            </ul>
+            </div>
+            
+            <form class="form-inline mx-auto mx-md-0">
+                <input class="form-control mr-sm-2" action="/action_page.php" placeholder="Arama yapın...">
+                <button class="btn btn-secondary" type="submit">
+                <i class="fa fa-search"></i>
+                </button>
+            </form>
+            </div>
+        </nav>
+        
+        <div class="imgcontainer">
+            <picture>
+                <source media="(max-width: 650px)" srcset="images/notfound2.jpg">
+                <img src="images/notfound.jpg" class="img-fluid">
+                
+            </picture>    
+            <div class="not-found-text">
+                <h1 class="display-1 text-white text-center resp-text">SAYFA BULUNAMADI</h1>
+                <h4 class="text-muted text-center font-weight-light">Teleskopunuzun lensini temizlemek isteyebilirsiniz.</h4>
+            </div>
+        </div>
+        
+        <footer class="page-footer">
+            <div class="container-fluid footer-bg">
+                <div class="row py-5 mx-5">
+                    <div class="col-lg-2"></div>
+                    <div class="col-md-6 col-lg-4 mt-3 mb-3 mb-md-0">
+                        <span class="text-white">Evren Ağacı</span>
+                        <br>
+                        <small class="text-white text-muted">Evren Ağacı ismini evrenin milyarlarca farklı şekilde <br> evrimleşerek dallanmasından esinlenerek almıştır.</small>
+                    
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="row text-center">
+                        <div class="col-md-12 mb-3">
+                            <a href="https://facebook.com/seaquee" style="font-size: 25px" class="news-a"> 
+                                <i class="fa fa-facebook-official text-white mr-md-2 mr-3"></i> 
+                            </a>
+                            <a href="https://github.com/seaque" style="font-size: 25px" class="news-a">
+                                <i class="fa fa-github-square text-white mr-md-2 mr-3"></i>
+                            </a>
+                            <a href="#" class="news-a">
+                                <i class="fa fa-twitter-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            </a>
+                            <a href="https://google.com">
+                                <i class="fa fa-google-plus-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            </a>
+                            <a href="#" class="news-a">
+                                <i class="fa fa-reddit-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            </a>
+                        </div>
+                            <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-secondary btn-rounded text-muted">HABER BÜLTENİNE ABONE OLUN</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
+                    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> n Me
+                </div>
+            </div>
+        </footer>
+    
+    </body>
+    
+</html>
