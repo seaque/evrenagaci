@@ -1,1 +1,1 @@
-seaque.github.io
+[Link](seaque.github.io)
