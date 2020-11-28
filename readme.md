@@ -1,1 +1,1 @@
-[L](https://seaque.github.io/)
+[Link](https://seaque.github.io/)
