@@ -1,1 +1,603 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <style>
+        .oswald,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .btn-secondary {
+            background-color: #400B60;
+        }
+
+        .btn-secondary:hover {
+            background-color: black;
+        }
+
+        .btn-outline-secondary {
+            color: #400B60;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #400B60;
+        }
+
+        .bg-secondary {
+            background-color: #400B60;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-indicators li {
+            visibility: hidden;
+        }
+
+        .footer-bg {
+            background: linear-gradient(to bottom, #37033D 30%, #000000 90%);
+        }
+
+        h2 {
+            font-size: 23px;
+        }
+
+        .news-a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .latenews-img {
+            width: 30%;
+        }
+
+        .news-a:hover {
+            text-decoration: none;
+            color: #400B90;
+        }
+
+        .news-a:active {
+            color: green;
+        }
+
+        .news-img:hover {
+            opacity: 0.85;
+            transition: .3s ease;
+        }
+
+        .editorpick-img {
+            width: 25%;
+        }
+
+        .top-reads {
+            width: 25%;
+        }
+
+        .read-more-container {
+            padding: 10px;
+            background: linear-gradient(to bottom, #400B90 60%, #000000 90%);
+            display: none;
+        }
+
+        .read-more-container a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .read-more-container:hover {
+            background: linear-gradient(to bottom, green 40%, #000000 90%);
+        }
+
+        .nav-item a:hover {
+            color: #400B90;
+            border-bottom: solid red 1px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .carousel-caption {
+                top: 85px;
+                bottom: auto;
+                text-shadow: 1px 1px black;
+            }
+
+            .latenews-img {
+                width: 40%;
+                margin-bottom: 20px;
+            }
+
+            .navbar {
+                opacity: 0.9;
+            }
+
+            .top-reads {
+                width: 30%;
+            }
+
+            .sc-img {
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .form-control {
+                width: 70%;
+            }
+
+            .carousel-caption {
+                top: 20px;
+                bottom: auto;
+                text-shadow: 2px 2px black;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .latenews-img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .editorpick-img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .navbar {
+                opacity: 0.9;
+            }
+
+            .top-reads {
+                width: 25%;
+            }
+
+            .read-more-container {
+                display: table;
+                margin: 0px 20px;
+            }
+
+            .sc-img {
+                width: 50%;
+            }
+    </style>
+
+    <title>Evren Ağacı – Astronomi Bilgi Sitesi </title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light mb-3">
+        <a class="navbar-brand" href="index.html"> <img src="images/logo.png" width="70px"> </a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenav1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsenav1">
+            <ul class="navbar-nav mx-auto nav-fill">
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="page4.html">GÜNCEL
+                        KONULAR</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">BİLİM
+                        İNSANLARI</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="page2.html">ISS CANLI
+                        YAYIN</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">GALERİ</a>
+                </li>
+            </ul>
+        </div>
+
+        <form class="form-inline mx-auto mx-md-0">
+            <input class="form-control mr-sm-2" action="/action_page.php" placeholder="Arama yapın...">
+            <button class="btn btn-secondary" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </nav>
+
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+            <li data-target="#test" data-slide-to="0" class="active"></li>
+            <li data-target="#test" data-slide-to="1"></li>
+            <li data-target="#test" data-slide-to="2"></li>
+            <li data-target="#test" data-slide-to="3"></li>
+        </ul>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <a href="notfound.html">
+                    <img src="images/carousel1.png" alt="Doppler Etkisi">
+                    <div class="carousel-caption">
+                        <h3>Doppler Etkisi</h3>
+                        <p>Evrenin merkezindeki tahtımızdan atılmamız çok da zor olmamıştı.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="notfound.html">
+                    <img src="images/carousel2.png" alt="First Man (2018)">
+                    <div class="carousel-caption">
+                        <h3>First Man (2018) - İnceleme</h3>
+                        <p>Damien Chazelle son filmi First Man'de Ryan Gosling ile tekrar çalışma fırsatını yakalamıştı.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="notfound.html">
+                    <img src="images/carousel3.png" alt="Nasa - Artemis">
+                    <div class="carousel-caption">
+                        <h3>NASA – Artemis Projesi</h3>
+                        <p>Dünyalılar olarak komşumuzu tekrar ziyaret etme zamanı.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="notfound.html">
+                    <img src="images/carousel4.png" alt="M87 Kara Delik">
+                    <div class="carousel-caption">
+                        <h3>İlk Temas</h3>
+                        <p>M87 galaksisinde ilk defa çekilen kara delik fotoğrafı tarihe gireli bir yıl oldu.</p>
+                    </div>
+                </a>
+            </div>
+
+            <a class="carousel-control-prev" href="#mycarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2 class="mt-5 text-uppercase">Son Haberler</h2>
+
+        <hr class="mb-4">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-3 clearfix">
+                <a href="page3.html"> <img src="images/sonhaberler0.jpg" style="width: 100%" class="mb-4 news-img"> </a>
+                <h3 class="mb-4"> <a href="page3.html" class="news-a">Yıldızlararası Cisimlerin Hayat Hikayeleri</a>
+                </h3>
+                <p>Güneş sistemimizi ziyaret eden ilk iki yıldızlararası cisimlerin geldikleri yerler hakkında bulgular
+                    bulundu.</p>
+                <div class="read-more-container oswald mb-4 mx-auto"><a href="page3.html">DEVAMINI OKU</a></div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="col-lg-12 mb-5 clearfix">
+                    <a href="notfound.html"> <img src="images/sonhaberler2.jpg"
+                            class="latenews-img float-left mr-md-3 news-img"> </a>
+                    <h3> <a href="notfound.html" class="news-a">Güneşimiz Ne Kadar Tembel?</a> </h3>
+                    <p class="overflow-hidden">Araştırmalar gösteriyor ki Güneşimiz birçok yıldız benzerine kıyasla
+                        oldukça tembel.</p>
+                    <div class="read-more-container oswald mb-4 mx-auto"><a href="notfound.html">DEVAMINI OKU</a></div>
+                </div>
+
+                <div class="col-lg-12 mb-5 clearfix">
+                    <a href="notfound.html"> <img src="images/sonhaberler3.jpg"
+                            class="latenews-img float-left mr-md-3 news-img"> </a>
+                    <h3> <a href="notfound.html" class="news-a">Orion'a Elveda</a> </h3>
+                    <p class="overflow-hidden">Kış ilkbahara geçerken, güçlü avcı doğuda yeni takımyıldızlar yükseldikçe
+                        yavaş yavaş akşam alacakaranlığa kaymakta.</p>
+                    <div class="read-more-container oswald mb-4 mx-auto"><a href="notfound.html">DEVAMINI OKU</a></div>
+                </div>
+
+                <div class="col-lg-12 mb-4 clearfix">
+                    <a href="notfound.html"> <img src="images/sonhaberler1.jpg"
+                            class="latenews-img float-left mr-md-3 news-img"> </a>
+                    <h3> <a href="notfound.html" class="news-a"> Comet Interceptor </a> </h3>
+                    <p class="overflow-hidden"><abbr title="Avrupa Uzay Ajansı">ESA</abbr> önderliğinde geliştirilecek,
+                        2028 yılında fırlatılması planlanan görev daha önce hiç denenmemiş, eşsiz bir görev olacak.</p>
+                    <div class="read-more-container oswald mx-auto"><a href="notfound.html">DEVAMINI OKU</a></div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5 text-uppercase">Editörden Seçmeler</h2>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12 mb-4">
+                <a href="notfound.html"> <img src="images/editorsecme1.jpg"
+                        class="editorpick-img float-left mr-md-3 news-img"> </a>
+                <h3 class="mt-1"> <a href="notfound.html" class="news-a">Bu Ötegezegen Yaşam İçin Proxima B’den Daha İyi
+                        Bir Aday Olabilir</a> </h3>
+                <p class="overflow-hidden">Geçen sene keşfedilen Proxima B, Dünya ölçeğindeki en yakın gezegenimiz
+                    olabilir, ancak bir sonraki uzay tatilinizi bu gezegende geçirmek istemezsiniz.</p>
+                <div class="read-more-container oswald mb-4 mx-auto"><a href="notfound.html">DEVAMINI OKU</a></div>
+            </div>
+            <div class="col-lg-12 mb-4">
+                <a href="notfound.html"> <img src="images/editorsecme2.jpg"
+                        class="editorpick-img float-left mr-md-3 news-img"> </a>
+                <h3 class="mt-1"> <a href="notfound.html" class="news-a">Büyük Patlama'dan Önce Ne Vardı?</a> </h3>
+                <p class="overflow-hidden">Büyük Sıçrama teorisinin bir zamanlar imkansız olduğu düşünülüyordu. Fakat
+                    iki fizikçi düşüncelerimizi değiştirdi. Başlangıçta, sonsuz yoğun, küçük bir madde topu vardı. Sonra
+                    her şey patladı, bugün gördüğümüz atomlara, moleküllere, yıldızlara ve galaksilere yol açtı. Ya da
+                    en azından bize fizikçiler tarafından son birkaç yıldır söylenilen bu.</p>
+                <div class="read-more-container oswald mb-4 mx-auto"><a href="notfound.html">DEVAMINI OKU</a></div>
+            </div>
+            <div class="col-lg-12 mb-4">
+                <a href="notfound.html"> <img src="images/editorsecme3.jpg"
+                        class="editorpick-img float-left mr-md-3 news-img"> </a>
+                <h3 class="mt-1"> <a href="notfound.html" class="news-a">Venüs'ün Dönüşünün Garipliğinin Gizemi Nihayet
+                        Çözülmüş Olabilir</a> </h3>
+                <p class="overflow-hidden">Yeni bir araştırma, Venüs atmosferinin neden gezegenin yüzeyinden çok daha
+                    hızlı döndüğünün arkasındaki gizemin sonunda çözülebileceğini söylüyor.Araştırmanın bulguları
+                    yaşanabilir uzak gezegenlerin veya güneş sistemimizin ötesindeki dünyaların gerçekte nasıl
+                    olabileceğine ışık tutmaya yardımcı olabilir.</p>
+                <div class="read-more-container oswald mb-4 mx-auto"><a href="notfound.html">DEVAMINI OKU</a></div>
+            </div>
+            <div class="col-lg-12 mb-4">
+                <a href="notfound.html"> <img src="images/editorsecme4.jpg"
+                        class="editorpick-img float-left mr-md-3 news-img"> </a>
+                <h3 class="mt-1"> <a href="notfound.html" class="news-a">Hubble 30.yılını muhteşem bir fotoğrafla
+                        kutladı</a> </h3>
+                <p class="overflow-hidden">NASA / ESA Hubble Uzay Teleskobu’nun ikonik görüntüleri ve bilimsel buluşları
+                    Evren hakkındaki görüşümüzü yeniden tanımladı. Otuz yıllık bilimsel keşifleri anması açısından bu
+                    görüntü, teleskobun 30 yıl boyunca gözlemlediği birçok çalkantılı yıldız doğumevinin en fotojenik
+                    örneklerinden biri.</p>
+                <div class="read-more-container oswald mx-auto"><a href="notfound.html">DEVAMINI OKU</a></div>
+            </div>
+
+        </div>
+
+        <h2 class="mt-5 text-uppercase">Günün bilim insanları</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/bugununbiliminsanlari1.jpg" class="img-fluid sc-img">
+                        <h3 class="card-title mt-3">Batlamyus</h3>
+                        <p>Yunan matematikçi, coğrafyacı ve astronom.</p>
+                        <button type="button" class="btn btn-outline-secondary card-link" data-toggle="modal"
+                            data-target="#modal1">
+                            Ayrıntılı Bilgi
+                        </button>
+                        <div class="modal fade" id="modal1">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Klaudyos Batlamyus</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/bugununbiliminsanlari1_2.jpg" class="float-left mr-3">
+                                        <p class="text-left">Klaudyos Batlamyus (Antik Yunanca: Κλαύδιος Πτολεμαίος,
+                                            Klaudios Ptolemaios), İskenderiyeli Yunan matematikçi, coğrafyacı ve
+                                            astronom. Yaklaşık olarak 100-170 yılları arasında yaşadığı kabul edilir.
+                                            Geç İskenderiye Dönemi'nde yaşamış (MS 2. yüzyılın ilk yarısı) ünlü bilim
+                                            adamlarındandır. Hayatı hakkında hemen hemen hiçbir bilgi bulunmamaktadır.
+                                            Müslüman astronomlar 78 yaşına kadar yaşadığını söylemektedir.[kaynak
+                                            belirtilmeli] Yunan asıllı bir Mısırlı, veya Mısır asıllı bir Yunan olduğu
+                                            iddia edilmektedir.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/bugununbiliminsanlari2.jpg" class="img-fluid sc-img">
+                        <h3 class="card-title mt-3">Kepler</h3>
+                        <p>Alman gökbilimci, matematikçi ve astrolog.</p>
+                        <button type="button" class="btn btn-outline-secondary card-link" data-toggle="modal"
+                            data-target="#modal2">
+                            Ayrıntılı Bilgi
+                        </button>
+                        <div class="modal fade" id="modal2">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Johannes Kepler</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/bugununbiliminsanlari2_1.jpg" class="float-left mr-3">
+                                        <p class="text-left">Johannes Kepler (Almanca telaffuz: [ˈkʰɛplɐ]; (d. 27 Aralık
+                                            1571 – ö. 15 Kasım 1630), Alman gökbilimci, matematikçi ve astrolog. 17.
+                                            Yüzyılın bilimsel devriminde, "Astronoma Nova", "Harmonik Mundi" ve
+                                            "Kopernik Astronomi Özeti" adlı çalışmalarına bağlı olarak, şahsen ortaya
+                                            çıkardığı Kepler'in gezegensel hareket yasaları ile tanınır. Ayrıca bu
+                                            çalışmalar Isaac Newton’un evrensel yerçekimi kuvveti teorisine dayanak
+                                            sağlamıştır. Kariyeri boyunca, Graz, Avusturya’da bir papaz okulunda
+                                            matematik öğretmenliği yaptı. Aynı okulda Prince Hans Ulrich von Eggenberg
+                                            de öğretmenlik yapmakta idi. Daha sonra gök bilimci Tycho Brahe’in asistan
+                                            oldu. Daha sonra imparator II. Rudolf döneminde "imparatorluk matematikçi"
+                                            unvanı verilerek imparatorluk memuru olarak çalıştı ve onun iki varisi
+                                            Matthias ve II. Ferdinand dönemlerinde de bu görevlerle uğraştı.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/bugununbiliminsanlari3.jpg" class="img-fluid sc-img">
+                        <h3 class="card-title mt-3">Kopernik</h3>
+                        <p>Prusya İmparatorluğu'nda Katolik Piskopos Danışmanı.</p>
+                        <button type="button" class="btn btn-outline-secondary card-link" data-toggle="modal"
+                            data-target="#modal3">
+                            Ayrıntılı Bilgi
+                        </button>
+                        <div class="modal fade" id="modal3">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Nikolas Kopernik</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/bugununbiliminsanlari3_1.jpg" class="float-left mr-3">
+                                        <p class="text-left">Nikolas Kopernik (Asıl ismi Niklas Koppernigk; 19 Şubat
+                                            1473, Toruń - 24 Mayıs 1543, Frombork), Prusya İmparatorluğu'na bağlı
+                                            Ermland Derebeyliği'nde Katolik piskopos danışmanı, boş zamanlarında
+                                            matematik, astronomi ve harita bilimi ile meşgul olan amatör bilim adamı.
+                                            Nikolas Kopernik, "De revolutionibus orbium coelestium" (Göksel kürelerin
+                                            devinimleri üzerine) başlığını taşıyan başyapıtında Güneş Sistemi'nin
+                                            tarifini yapmış, gezegenlerin güneşin merkezde olduğu sabit yörüngeler
+                                            üzerinde hareket ettiğini kabul eden günmerkezlilik yasasını savunmuştur.
+                                            1543 yılında, Kopernik'in ölümünden kısa bir süre önce yayımlanan bu kitap,
+                                            "Kopernik Günmerkezliliği" denilen astronomik modelin başlangıcını oluşturur
+                                            ve modern astronomik ve bilimsel gelişmelerin başlangıç noktası olarak
+                                            gösterilerek bilim tarihinde bir dönüm noktası teşkil etmektedir.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="images/bugununbiliminsanlari4.jpg" class="img-fluid sc-img">
+                        <h3 class="card-title mt-3">Tycho Brahe</h3>
+                        <p>Danimarkalı matematikçi, astronom ve astrolog.</p>
+                        <button type="button" class="btn btn-outline-secondary card-link" data-toggle="modal"
+                            data-target="#modal4">
+                            Ayrıntılı Bilgi
+                        </button>
+                        <div class="modal fade" id="modal4">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Tycho Brahe</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/bugununbiliminsanlari4_1.jpg" class="float-left mr-3">
+                                        <p class="text-left">Tycho Brahe, asıl adıyla Tyge Ottesen Brahe (d. 14 Aralık
+                                            1546, Scania - ö. 24 Ekim 1601, Prag), Danimarkalı simyacı,matematikçi
+                                            astronom ve astrolog. Kopernik'in ölümünden 3 yıl sonra doğdu. Asil bir
+                                            soydan geliyordu, babası bir şatonun yöneticisi ve nüfuzlu biriydi. O
+                                            doğmadan önce babası onu amcasına vermeye taahhüt etmesine rağmen bunu sonra
+                                            yerine getirmeyince, Danimarka donanmasında subay olan amcası Jørgen
+                                            tarafından kaçırılmıştır. Küçüklüğünden beri yıldızlara ve gökyüzüne merak
+                                            saran bir çocuk iken 1559'da Kopenhag üniversitesindeyken şahit olduğu Güneş
+                                            tutulması onda bir tutku yarattı, ne var ki amcası onu Danimarka'nın siyasal
+                                            yaşamının önemli kişilerinden biri yapmak istiyordu. Bu yüzden onun hukuk
+                                            okumasını istedi ve Leipzig'e yolladı. Gündüzleri hukuk eğitimi gören Brahe,
+                                            geceleri ise gökyüzünü gözlemliyordu.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5 text-uppercase">Daha Fazla Başlık</h2>
+        <hr>
+        <div class="row my-4">
+            <div class="col-lg-6 mb-5 mb-lg-3">
+                <img src="images/dahafazla1.jpg" class="float-left mr-3 mb-3 top-reads news-img">
+                <h4 class="mt-md-3 mt-lg-0"> <a href="notfound.html" class="news-a">Kara Delik, Yörüngesine Girmiş Olan
+                        Beyaz Cüce'den Besleniyor</a></h4>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-3">
+                <img src="images/dahafazla2.jpg" class="float-left mr-3 mb-3 top-reads news-img">
+                <h4 class="mt-md-3 mt-lg-0"> <a href="notfound.html" class="news-a"> 110 Işık Yılı Uzaklıktaki Bir
+                        Gezegende Sıvı Hâlde Su Tespit Edildi </a></h4>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-3">
+                <img src="images/dahafazla3.jpg" class="float-left mr-3 mb-3 top-reads news-img">
+                <h4 class="mt-md-3 mt-lg-0"> <a href="notfound.html" class="news-a"> Satürn'ün Atmosferi Neden Bu Kadar
+                        Sıcak?</a></h4>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-3">
+                <img src="images/dahafazla4.jpg" class="float-left mr-3 mb-3 top-reads news-img">
+                <h4 class="mt-md-3 mt-lg-0"> <a href="notfound.html" class="news-a">Bir Kara Deliğin Ağırlığı Ne
+                        Kadardır?</a></h4>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-3">
+                <img src="images/dahafazla5.jpg" class="float-left mr-3 mb-3 top-reads news-img">
+                <h4 class="mt-md-3 mt-lg-0"> <a href="notfound.html" class="news-a">NASA'nın İkizleri Voyagerlar İçin
+                        Sırada Ne Var?</a></h4>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <img src="images/dahafazla6.jpg" class="float-left mr-3 mb-3 top-reads news-img">
+                <h4 class="mt-md-3 mt-lg-0"> <a href="notfound.html" class="news-a">Uzay Ne Kadar Soğuk?</a></h4>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container-fluid footer-bg">
+            <div class="row py-5 mx-5">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-12">
+                    <div class="row text-center">
+                        <div class="col-12 mb-3">
+                            
+                            <i class="fa fa-facebook-official text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            
+                            <a href="https://github.com/seaque" class="news-a">
+                                <i class="fa fa-github-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            </a>
+                            
+                            <i class="fa fa-twitter-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            
+                            <i class="fa fa-google-plus-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            
+                            <i class="fa fa-reddit-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-secondary btn-rounded text-muted">HABER
+                                BÜLTENİNE ABONE OLUN</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
+                <a href="https://mdbootstrap.com/"> MDBootstrap</a> n Me
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
