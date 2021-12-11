@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="tr">
-    
-    <head>
-        
+
+<head>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-        
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>          
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>   
-        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    
+
     <style>
-        .oswald, h2, h3, h4{
+        .oswald,
+        h2,
+        h3,
+        h4 {
             font-family: 'Oswald', sans-serif;
         }
+
         .btn-secondary {
             background-color: #400B60;
         }
+
         .btn-secondary:hover {
             background-color: black;
         }
+
         .btn-outline-secondary {
             color: #400B60;
         }
+
         .btn-outline-secondary:hover {
             background-color: #400B60;
         }
+
         .article-container {
             background-color: #101010;
             padding: 80px;
         }
+
         .bg-secondary {
             background-color: #400B60;
         }
+
         .footer-bg {
             background: linear-gradient(to bottom, #37033D 30%, #000000 90%);
         }
+
         .news-a {
             text-decoration: none;
             color: black;
         }
+
         .news-a:hover {
             text-decoration: none;
             color: #400B90;
         }
+
         .news-a:active {
             color: green;
         }
+
         .news-img:hover {
             opacity: 0.85;
             transition: .3s ease;
         }
+
         .top-reads {
             width: 25%;
         }
+
         .source-a {
             color: #400B90;
             text-decoration: underline;
         }
+
         .source-a:hover {
             color: green;
         }
+
         .nav-item a:hover {
             border-bottom: solid red 1px;
         }
+
         .similar-topics {
             width: 50%;
         }
+
         .progress-container {
             width: 100%;
             height: 8px;
@@ -82,6 +102,7 @@
             background: #400B90;
             width: 0%;
         }
+
         #myBtn {
             position: fixed;
             bottom: 50px;
@@ -99,43 +120,52 @@
             background-color: darkgreen;
             transition: .5s ease;
         }
-        
+
         @media screen and (max-width: 1000px) {
             .navbar {
                 opacity: 0.9;
             }
+
             .top-reads {
                 width: 30%;
             }
+
             .similar-topics {
                 width: 100%;
             }
         }
-        @media screen and (max-width: 650px) {  
+
+        @media screen and (max-width: 650px) {
             .form-control {
                 width: 80%;
             }
+
             h2 {
                 font-size: 25px;
             }
+
             .navbar {
                 opacity: 0.9;
             }
+
             .top-reads {
                 width: 25%;
             }
+
             .read-more-container {
                 display: table;
-                margin: 0px  20px;
+                margin: 0px 20px;
             }
+
             .similar-topics {
                 width: 53%;
             }
-    </style>    
-    
-    <script>
+    </style>
 
-        window.onscroll = function() {myFunction()};
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
 
         function myFunction() {
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -143,198 +173,278 @@
             var scrolled = (winScroll / height) * 100;
             document.getElementById("myBar").style.width = scrolled + "%";
         }
-    
     </script>
-        
+
     <title>Yıldızlararası Cisimlerin Hayat Hikayeleri | Evren Ağacı – Astronomi Bilgi Sitesi </title>
-        
-    </head>
-    
-    <body>
-             
-        <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top mb-3">  
-            <a class="navbar-brand" href="index.html"> <img src="images/logo.png" width="70px"> </a>
-            
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenav1">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top mb-3">
+        <a class="navbar-brand" href="index.html"> <img src="images/logo.png" width="70px"> </a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenav1">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="collapsenav1">
-            <ul class="navbar-nav mx-auto nav-fill">   
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsenav1">
+            <ul class="navbar-nav mx-auto nav-fill">
                 <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="#">GÜNCEL KONULAR</a> </li>
-                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">BİLİM İNSANLARI</a> </li>
-                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="page2.html">ISS CANLI YAYIN</a> </li>
-                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">GALERİ</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">BİLİM
+                        İNSANLARI</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="page2.html">ISS CANLI
+                        YAYIN</a> </li>
+                <li class="nav-item font-weight-bold mx-3"> <a class="nav-link oswald" href="notfound.html">GALERİ</a>
+                </li>
             </ul>
-            </div>
-            
-            <form class="form-inline mx-auto mx-md-0">
-                <input class="form-control mr-sm-2" action="/action_page.php" placeholder="Arama yapın...">
-                <button class="btn btn-secondary" type="submit">
+        </div>
+
+        <form class="form-inline mx-auto mx-md-0">
+            <input class="form-control mr-sm-2" action="/action_page.php" placeholder="Arama yapın...">
+            <button class="btn btn-secondary" type="submit">
                 <i class="fa fa-search"></i>
-                </button>
-            </form>
-        </nav>
-        
-        <div class="progress-container sticky-top">
-            <div class="progress-bar" id="myBar"></div>
-        </div>  
-        
-        <div class="container-fluid article-container mb-5">
-            <div class="row">
-                <div class="col-0 col-md-2 col-lg-4"></div>
-                <div class="col-12 col-md-10 col-lg-8">
-                <h1 class="text-white text-uppercase oswald text-left">Yıldızlararası Cisimlerin<br>Hayat Hikayeleri</h1>
+            </button>
+        </form>
+    </nav>
+
+    <div class="progress-container sticky-top">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="container-fluid article-container mb-5">
+        <div class="row">
+            <div class="col-0 col-md-2 col-lg-4"></div>
+            <div class="col-12 col-md-10 col-lg-8">
+                <h1 class="text-white text-uppercase oswald text-left">Yıldızlararası Cisimlerin<br>Hayat Hikayeleri
+                </h1>
                 <small class="text-white">Yazan: Jeff Hecth</small>
                 <small class="text-white text-muted">&nbsp;|&nbsp;</small>
                 <small class="text-white">21 Nisan, 2020</small>
-                </div>
             </div>
         </div>
-        
-        <button id="myBtn" title="En Üste Çık"><a href="#" style="color: white"><i class="fa fa-arrow-up"></i></a></button>
-        
-        <div class="container justify-content-center">
-            
-            <div class="row">
-                <div class="col-lg-2">
+    </div>
+
+    <button id="myBtn" title="En Üste Çık"><a href="#" style="color: white"><i class="fa fa-arrow-up"></i></a></button>
+
+    <div class="container justify-content-center">
+
+        <div class="row">
+            <div class="col-lg-2">
                 <p class="oswald text-center">HABER BÜLTENİMİZE<br>KAYIT OLUN</p>
                 <p class="text-muted mb-1">E-Mail:</p>
                 <div class="input-group mb-5 mb-lg-0">
-                <input type="text" class="form-control" required>
-                <button type="submit" class="btn btn-secondary"><i class="fa fa-mail-forward"></i></button>
+                    <input type="text" class="form-control" required>
+                    <button type="submit" class="btn btn-secondary"><i class="fa fa-mail-forward"></i></button>
                 </div>
-                    
-                </div>
-                
-                <div class="col-lg-8">  
-                <article>
-                   <h2>Güneş sistemimizi ziyaret eden ilk iki yıldızlararası cisimlerin geldikleri yerler hakkında bulgular bulundu.</h2>
-                    
-                   <p class="mt-4 mb-2">Primordial karbon monoksitin buharlaştırılması, Comet 2I / Borisov'u milyonlarca yıl sonra kozmik derin dondurmada aktif hale getirdi.</p>
-                    
-                    <img src="https://skyandtelescope.org/wp-content/uploads/Borisov-art.jpg" class="img-fluid mt-5">
-                    <small><em><p class="mt-2">2I / Borisov Yıldızlararası cisminin Güneş sistemimizi ziyaretinin bir sanatçı gözünden yansıması.<br><em><strong>NRAO / AUI / NSF / S. Dagnello</strong></em></p></em></small><br>
 
-                    
-                    <p class="mb-4">Yeni ultraviyole ve milimetre dalga gözlemleri, yıldızlararası Comet 2I Borisov'un iç güneş sisteminde canlanmasını sağlayan çok sayıda primordial karbon monoksitin buharlaşmasının olduğunu gösterdi. Karbon monoksit yaklaşık 25 kelvinde donar, bu da kuyruklu yıldız Borisov'un ana yıldızının gezegen diskinin soğuk dış saçaklarında oluştuğunu gösterir. Ayrı bir şekilde, yeni bir teorik model, doğal süreçlerin bilinen ilk yıldızlararası ziyaretçi olan Oumuamua'yı nasıl oluşturabildiğini göstermektedir.</p>
-                    
-                    <p class="mb-5">Her iki nesne de güneş sistemimize hiperbolik yörüngelerle ulaştı, ancak kökenleri - yıldızlararası olmanın yanı sıra - belirsiz kaldı. Borisov kuyruklu yıldızı hala gözlemlenebilir, ancak 'Oumuamua, Satürn'ün yörüngesini kullanarak güneş sisteminden çıktığı için artık gözlemlenebilir değil.</p>
-                    
+            </div>
+
+            <div class="col-lg-8">
+                <article>
+                    <h2>Güneş sistemimizi ziyaret eden ilk iki yıldızlararası cisimlerin geldikleri yerler hakkında
+                        bulgular bulundu.</h2>
+
+                    <p class="mt-4 mb-2">Primordial karbon monoksitin buharlaştırılması, Comet 2I / Borisov'u
+                        milyonlarca yıl sonra kozmik derin dondurmada aktif hale getirdi.</p>
+
+                    <img src="https://skyandtelescope.org/wp-content/uploads/Borisov-art.jpg" class="img-fluid mt-5">
+                    <small><em>
+                            <p class="mt-2">2I / Borisov Yıldızlararası cisminin Güneş sistemimizi ziyaretinin bir
+                                sanatçı gözünden yansıması.<br><em><strong>NRAO / AUI / NSF / S. Dagnello</strong></em>
+                            </p>
+                        </em></small><br>
+
+
+                    <p class="mb-4">Yeni ultraviyole ve milimetre dalga gözlemleri, yıldızlararası Comet 2I Borisov'un
+                        iç güneş sisteminde canlanmasını sağlayan çok sayıda primordial karbon monoksitin
+                        buharlaşmasının olduğunu gösterdi. Karbon monoksit yaklaşık 25 kelvinde donar, bu da kuyruklu
+                        yıldız Borisov'un ana yıldızının gezegen diskinin soğuk dış saçaklarında oluştuğunu gösterir.
+                        Ayrı bir şekilde, yeni bir teorik model, doğal süreçlerin bilinen ilk yıldızlararası ziyaretçi
+                        olan Oumuamua'yı nasıl oluşturabildiğini göstermektedir.</p>
+
+                    <p class="mb-5">Her iki nesne de güneş sistemimize hiperbolik yörüngelerle ulaştı, ancak kökenleri -
+                        yıldızlararası olmanın yanı sıra - belirsiz kaldı. Borisov kuyruklu yıldızı hala
+                        gözlemlenebilir, ancak 'Oumuamua, Satürn'ün yörüngesini kullanarak güneş sisteminden çıktığı
+                        için artık gözlemlenebilir değil.</p>
+
                     <h4 class="mb-4">2I / BORISOV Kuyrukluyıldızı Şeklini Nerede Aldı?</h4>
-                    
-                    <p>Bu haftaki <em>Nature Astronomy</em>, geçen Aralık ayındaki günberisinin hemen ardından Borisov Kuyruklu Yıldızı'nın iki çalışmasını, spektroskopinin bileşimini ortaya çıkaracak kadar parlak olduğu rapor ediyor.</p>
-                    
-                    <p>Hubble Uzay Teleskobu ile sorunlar, Dennis Bodewits (Auburn Üniversitesi) liderliğindeki bir ekibi ultraviyole floresan gözlemlerini karbon monoksitten (CO) bir ay boyunca yaymaya zorladı. CO'dan kaynaklanan emisyonlar bu dönemde neredeyse sabit kaldı, ancak su moleküllerinden kaynaklanan emisyonlar hızla düştü ve başlangıçta gözlemcileri şaşırttı. Daha sonra, gaz kaçağının gözlemleri sırasında 1-6 metre yüzey materyalini çıkardığını ve CO açısından zengin daha derin katmanları açığa çıkardığını fark ettiler. Aynı zamanda NASA'nın Neil Gehrels Swift Gözlemevi uydusu tarafından ölçülen su seviyelerinden %50 daha fazla olduğunu gördüler.</p>
-                    
+
+                    <p>Bu haftaki <em>Nature Astronomy</em>, geçen Aralık ayındaki günberisinin hemen ardından Borisov
+                        Kuyruklu Yıldızı'nın iki çalışmasını, spektroskopinin bileşimini ortaya çıkaracak kadar parlak
+                        olduğu rapor ediyor.</p>
+
+                    <p>Hubble Uzay Teleskobu ile sorunlar, Dennis Bodewits (Auburn Üniversitesi) liderliğindeki bir
+                        ekibi ultraviyole floresan gözlemlerini karbon monoksitten (CO) bir ay boyunca yaymaya zorladı.
+                        CO'dan kaynaklanan emisyonlar bu dönemde neredeyse sabit kaldı, ancak su moleküllerinden
+                        kaynaklanan emisyonlar hızla düştü ve başlangıçta gözlemcileri şaşırttı. Daha sonra, gaz
+                        kaçağının gözlemleri sırasında 1-6 metre yüzey materyalini çıkardığını ve CO açısından zengin
+                        daha derin katmanları açığa çıkardığını fark ettiler. Aynı zamanda NASA'nın Neil Gehrels Swift
+                        Gözlemevi uydusu tarafından ölçülen su seviyelerinden %50 daha fazla olduğunu gördüler.</p>
+
                     <img src="images/article.jpg" class="img-fluid mt-5">
-                    <cite><small><p class="mt-2">ALMA ile yıldızlararası Comet 2I / Borisov'dan çıkan hidrojen siyanür gazının (HCN, sol) ve karbon monoksit gazının (CO, sağ) gözlendi. ALMA görüntüleri kuyruklu yıldızın alışılmadık derecede büyük miktarda CO gazı içerdiğini göstermektedir.<br><strong>ALMA (ESO / NAOJ / NRAO) / M. Cordiner ve S. Milam / AUI / NSF / S. Dagnello</strong></p></small></cite>
-                    
-                    <p class="mt-5 mb-4">Martin Cordiner (NASA Goddard Uzay Uçuş Merkezi) ve Şili'deki Atacama Büyük Milimetre / milimetre Dizisi (ALMA) ile çalışan meslektaşları tarafından Aralık ayı ortasında yapılan kuyruklu yıldızın bağımsız milimetre dalgası gözlemleri de bol miktarda CO gösterdi. suya kıyasla CO miktarı, su buzunun buharlaşmaya başladığı su kar hattı olarak adlandırılan 2.5 astronomik birimdeki (au, Dünya ve Güneş arasındaki ortalama mesafe) herhangi bir güneş sistemi kuyruklu yıldızında gözlemlenenden daha yüksekti. (Gökbilimciler C / 2016 R2'de (PanSTARRS) 2.8 au'da iken daha yüksek miktarda CO ölçtüler. Ancak Cordiner bu Oort Cloud kuyruklu yıldızını "yakalanan yıldızlararası kuyruklu yıldız olabileceği kadar yabancı" olarak nitelendirdi.</p>
-                    
-                    <p class="my-4">Cordiner, yıldızlararası bir kuyruklu yıldızın pozisyonunu ölçebilmeyi "tamamen yeni bir gezegensel bilim alanı açan - uzak gezegen sistemlerinin fırlatılan yıldızlararası kuyruklu yıldızlarının doğrudan gözlemleriyle incelenmesi" olarak niteliyor.</p>
-                    
-                    <p class="my-4">Borisov Kuyruklu Yıldızı'ndaki yüksek CO seviyeleri, muhtemelen bir gezegensel diskin dış kısmında CO kar hattının ötesinde oluştuğunu ve yıldızlararası uzayda seyahatleri sırasında 25K'dan fazla olmayan sıcaklıklarda kaldığını gösterir.</p>
-                    
-                    <p class="my-4">Gezegensel bir sistemden fırlatma kolaydır. "Kuyruklu yıldızlardan kurtulmanın milyonlarca yolu var," diyor Bodewits. Kuyruklu yıldızın kırmızı bir M tipi yıldız etrafında oluşabileceğini düşünüyor, burada CO kar hattı 100 au'dan fazla ile karşılaştırıldığında sadece 6.6 a.u. güneş sistemimizde.</p>
-                    
-                    <p class="my-4"><em>Nature Astronomy</em> çalışmalarında yer almayan Bryce Bolin (Caltech), karbon monoksitin buharlaşmasının Kuyruklu Yıldız'ın faaliyetinin ve parçalanmasının nedeni olarak tanımlanması kuyruklu yıldız süreçleri ve yıldızlararası nesneler hakkındaki bilgilerimize önemli bir katkı sağlıyor.</p>
-                    
+                    <cite><small>
+                            <p class="mt-2">ALMA ile yıldızlararası Comet 2I / Borisov'dan çıkan hidrojen siyanür
+                                gazının (HCN, sol) ve karbon monoksit gazının (CO, sağ) gözlendi. ALMA görüntüleri
+                                kuyruklu yıldızın alışılmadık derecede büyük miktarda CO gazı içerdiğini
+                                göstermektedir.<br><strong>ALMA (ESO / NAOJ / NRAO) / M. Cordiner ve S. Milam / AUI /
+                                    NSF / S. Dagnello</strong></p>
+                        </small></cite>
+
+                    <p class="mt-5 mb-4">Martin Cordiner (NASA Goddard Uzay Uçuş Merkezi) ve Şili'deki Atacama Büyük
+                        Milimetre / milimetre Dizisi (ALMA) ile çalışan meslektaşları tarafından Aralık ayı ortasında
+                        yapılan kuyruklu yıldızın bağımsız milimetre dalgası gözlemleri de bol miktarda CO gösterdi.
+                        suya kıyasla CO miktarı, su buzunun buharlaşmaya başladığı su kar hattı olarak adlandırılan 2.5
+                        astronomik birimdeki (au, Dünya ve Güneş arasındaki ortalama mesafe) herhangi bir güneş sistemi
+                        kuyruklu yıldızında gözlemlenenden daha yüksekti. (Gökbilimciler C / 2016 R2'de (PanSTARRS) 2.8
+                        au'da iken daha yüksek miktarda CO ölçtüler. Ancak Cordiner bu Oort Cloud kuyruklu yıldızını
+                        "yakalanan yıldızlararası kuyruklu yıldız olabileceği kadar yabancı" olarak nitelendirdi.</p>
+
+                    <p class="my-4">Cordiner, yıldızlararası bir kuyruklu yıldızın pozisyonunu ölçebilmeyi "tamamen yeni
+                        bir gezegensel bilim alanı açan - uzak gezegen sistemlerinin fırlatılan yıldızlararası kuyruklu
+                        yıldızlarının doğrudan gözlemleriyle incelenmesi" olarak niteliyor.</p>
+
+                    <p class="my-4">Borisov Kuyruklu Yıldızı'ndaki yüksek CO seviyeleri, muhtemelen bir gezegensel
+                        diskin dış kısmında CO kar hattının ötesinde oluştuğunu ve yıldızlararası uzayda seyahatleri
+                        sırasında 25K'dan fazla olmayan sıcaklıklarda kaldığını gösterir.</p>
+
+                    <p class="my-4">Gezegensel bir sistemden fırlatma kolaydır. "Kuyruklu yıldızlardan kurtulmanın
+                        milyonlarca yolu var," diyor Bodewits. Kuyruklu yıldızın kırmızı bir M tipi yıldız etrafında
+                        oluşabileceğini düşünüyor, burada CO kar hattı 100 au'dan fazla ile karşılaştırıldığında sadece
+                        6.6 a.u. güneş sistemimizde.</p>
+
+                    <p class="my-4"><em>Nature Astronomy</em> çalışmalarında yer almayan Bryce Bolin (Caltech), karbon
+                        monoksitin buharlaşmasının Kuyruklu Yıldız'ın faaliyetinin ve parçalanmasının nedeni olarak
+                        tanımlanması kuyruklu yıldız süreçleri ve yıldızlararası nesneler hakkındaki bilgilerimize
+                        önemli bir katkı sağlıyor.</p>
+
                     <h4 class="mt-5">1I / 'OUMUAMUA'NIN YAPITAŞLARI</h4>
-                    
-                    <p class="my-4">Borisov kuyruklu yıldızı bir kuyruklu yıldız olarak tanınmak kolaydı, ancak ilk yıldızlararası ziyaretçimiz 1I / 'Oumuamua, gökbilimcilerin daha önce hiç görmediği gibiydi. Uzun sürdü, düzensizce yuvarlandı, gözenekli, garip bir şekilde hareket etti, sadece gaz tutamlarını serbest bıraktı - hatta sahipsiz uzaylı uzay gemisi olabileceği düşüncelerini uyandırdı.</p> 
-                
+
+                    <p class="my-4">Borisov kuyruklu yıldızı bir kuyruklu yıldız olarak tanınmak kolaydı, ancak ilk
+                        yıldızlararası ziyaretçimiz 1I / 'Oumuamua, gökbilimcilerin daha önce hiç görmediği gibiydi.
+                        Uzun sürdü, düzensizce yuvarlandı, gözenekli, garip bir şekilde hareket etti, sadece gaz
+                        tutamlarını serbest bıraktı - hatta sahipsiz uzaylı uzay gemisi olabileceği düşüncelerini
+                        uyandırdı.</p>
+
                     <div class="clearfix my-5">
-                    <img src="https://skyandtelescope.org/wp-content/uploads/oumuamua-simulation-410.jpg" class="img-fluid float-md-left mr-md-3">
-                    
-                    <cite><small><p class="mt-2">Gelgit bozulması senaryosunun simülasyonu, burada gösterildiği üzere Oumuamua benzeri bir nesne üretiyor. Gelgit gerilmeleri (mavi ve kırmızı renkte) yıldızlararası nesnenin bir sanatçının gözünden yansımasıdır.<br><em><strong>NAOC / Y. Zhang; Sanatçının konsepti: ESO / M. Kornmesser</strong></em></p></small></cite>
+                        <img src="https://skyandtelescope.org/wp-content/uploads/oumuamua-simulation-410.jpg"
+                            class="img-fluid float-md-left mr-md-3">
+
+                        <cite><small>
+                                <p class="mt-2">Gelgit bozulması senaryosunun simülasyonu, burada gösterildiği üzere
+                                    Oumuamua benzeri bir nesne üretiyor. Gelgit gerilmeleri (mavi ve kırmızı renkte)
+                                    yıldızlararası nesnenin bir sanatçının gözünden yansımasıdır.<br><em><strong>NAOC /
+                                            Y. Zhang; Sanatçının konsepti: ESO / M. Kornmesser</strong></em></p>
+                            </small></cite>
                     </div>
-                    
-                    <p class="mb-4 mt-5">Artık Yun Zhang (Côte d’Azur Gözlemevi, Fransa) “ilk kez 'Oumuamua'nın iyi anlaşılmış fiziksel ilkelere dayanan doğal bir senaryo ile üretilebileceğini” gösteren bir modeli olduğunu düşünüyor. Süreç, "Samanyolu'nda çok yaygın olabilir" diyor.</p>
-                    
-                    <p class="my-4">Yun Zhang ve Douglas Lin (California Üniversitesi, Santa Cruz) 13 Nisan'da <em>Nature Astronomy</em>'deki sayısal modellerini anlatıyorlar. Açıklama, büyük bir nesne, yerçekimi ile bir arada tutulan bir kilometre ölçeği moloz yığını kuyruklu yıldızının veya asteroitinin yörüngesini saptırdığında gezegen oluşumu sırasında başlar. Moloz yığını orta yıldızın birkaç yüz bin kilometre içinde geçer. Yakın pasajdan gelen güçlü yerçekimi etkileri, Jüpiter'in 1990'lardaki bir karşılaşmasında Comet Shoemaker-Levy 9'u ayırdığı gibi moloz yığını bozulana kadar uzatır.</p>
-                    
-                    <p class="my-4">Zhang ve Lin'in modelinde, parçalanmış parçalar yıldızın ötesine geçerek uzun kümeler oluşturur. Yıldızın ısısı en uçucu buzları buharlaştırır, ancak su gibi daha yüksek erime noktalarına sahip olanlar donar ve kalan parçaları gözenekli yapılarda bir arada tutan bir kabuk oluşturur. Momentum gevşek yapıları dışarıya taşıyacaktı, burada bir kısmı galaksiyi dolaşmak için kaçacaktı. Yapılar, 'Oumuamua güneş sisteminden geçerken yaptığı gibi uzayda tuhaf bir şekilde yuvarlanabilirdi.</p>
-                    
-                    <img src="https://skyandtelescope.org/wp-content/uploads/tidal_process-900px.jpg" class="img-fluid mt-4">
-                    <cite><small><p class="mt-2">Bu şekilde, 'Oumuamua benzeri nesnelerin ortaya çıkmasına neden olabilecek gelgit bozulması süreci gösterilmektedir.<br><strong>NAOC / Y. Zhang</strong></p></small></cite>
-                    
-                    <p class="my-4">Zhang "Bu senaryo geçerliyse, ‘Oumuamua'nın kökleri kilometrelerce yüzlerce kilometre arasında değişen bir kuyruklu yıldız ya da cüce gezegenin parçalanması olarak açıklanabilirdi." diyor.</p>
-                    </article>
-                    
-                    <div class="mb-5">
+
+                    <p class="mb-4 mt-5">Artık Yun Zhang (Côte d’Azur Gözlemevi, Fransa) “ilk kez 'Oumuamua'nın iyi
+                        anlaşılmış fiziksel ilkelere dayanan doğal bir senaryo ile üretilebileceğini” gösteren bir
+                        modeli olduğunu düşünüyor. Süreç, "Samanyolu'nda çok yaygın olabilir" diyor.</p>
+
+                    <p class="my-4">Yun Zhang ve Douglas Lin (California Üniversitesi, Santa Cruz) 13 Nisan'da
+                        <em>Nature Astronomy</em>'deki sayısal modellerini anlatıyorlar. Açıklama, büyük bir nesne,
+                        yerçekimi ile bir arada tutulan bir kilometre ölçeği moloz yığını kuyruklu yıldızının veya
+                        asteroitinin yörüngesini saptırdığında gezegen oluşumu sırasında başlar. Moloz yığını orta
+                        yıldızın birkaç yüz bin kilometre içinde geçer. Yakın pasajdan gelen güçlü yerçekimi etkileri,
+                        Jüpiter'in 1990'lardaki bir karşılaşmasında Comet Shoemaker-Levy 9'u ayırdığı gibi moloz yığını
+                        bozulana kadar uzatır.</p>
+
+                    <p class="my-4">Zhang ve Lin'in modelinde, parçalanmış parçalar yıldızın ötesine geçerek uzun
+                        kümeler oluşturur. Yıldızın ısısı en uçucu buzları buharlaştırır, ancak su gibi daha yüksek
+                        erime noktalarına sahip olanlar donar ve kalan parçaları gözenekli yapılarda bir arada tutan bir
+                        kabuk oluşturur. Momentum gevşek yapıları dışarıya taşıyacaktı, burada bir kısmı galaksiyi
+                        dolaşmak için kaçacaktı. Yapılar, 'Oumuamua güneş sisteminden geçerken yaptığı gibi uzayda tuhaf
+                        bir şekilde yuvarlanabilirdi.</p>
+
+                    <img src="https://skyandtelescope.org/wp-content/uploads/tidal_process-900px.jpg"
+                        class="img-fluid mt-4">
+                    <cite><small>
+                            <p class="mt-2">Bu şekilde, 'Oumuamua benzeri nesnelerin ortaya çıkmasına neden olabilecek
+                                gelgit bozulması süreci gösterilmektedir.<br><strong>NAOC / Y. Zhang</strong></p>
+                        </small></cite>
+
+                    <p class="my-4">Zhang "Bu senaryo geçerliyse, ‘Oumuamua'nın kökleri kilometrelerce yüzlerce
+                        kilometre arasında değişen bir kuyruklu yıldız ya da cüce gezegenin parçalanması olarak
+                        açıklanabilirdi." diyor.</p>
+                </article>
+
+                <div class="mb-5">
                     <h4 class="mt-5 mb-3" style="font-size: 18px">KAYNAKLAR</h4>
-                    <p>D. Bodewits vb. <a href="https://www.nature.com/articles/s41550-020-1095-2" class="source-a">“The carbon monoxide-rich interstellar comet 2I/Borisov.”</a> <cite>Nature Astronomy</cite>, 20 Nisan 2020.</p>
-                    <p>M. Cordiner vb. <a href="https://www.nature.com/articles/s41550-020-1087-2" class="source-a">“Unusually high CO abundance of the first active interstellar comet.”</a> <cite>Nature Astronomy</cite>, 20 Nisan 2020.</p>
-                    <p>Zhang Y. & Lin D. <a href="https://www.nature.com/articles/s41550-020-1065-8" class="source-a">“Tidal fragmentation as the origin of 1I/2017 U1 (‘Oumuamua).”</a><cite>Nature Astronomy</cite>, 13 Nisan 2020.</p>
-                    </div>
+                    <p>D. Bodewits vb. <a href="https://www.nature.com/articles/s41550-020-1095-2" class="source-a">“The
+                            carbon monoxide-rich interstellar comet 2I/Borisov.”</a> <cite>Nature Astronomy</cite>, 20
+                        Nisan 2020.</p>
+                    <p>M. Cordiner vb. <a href="https://www.nature.com/articles/s41550-020-1087-2"
+                            class="source-a">“Unusually high CO abundance of the first active interstellar comet.”</a>
+                        <cite>Nature Astronomy</cite>, 20 Nisan 2020.</p>
+                    <p>Zhang Y. & Lin D. <a href="https://www.nature.com/articles/s41550-020-1065-8"
+                            class="source-a">“Tidal fragmentation as the origin of 1I/2017 U1
+                            (‘Oumuamua).”</a><cite>Nature Astronomy</cite>, 13 Nisan 2020.</p>
                 </div>
             </div>
         </div>
-        
-        
-        <div class="text-white article-container pt-5">
-            <h2 class="text-center mb-5">BENZER KONULAR</h2>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4 mb-4 mr-md-2">
-                    <a href="notfound.html" class="news-img"> <img src="images/benzerkonular/1.jpg" class="img-fluid float-left mr-3 similar-topics"> </a>
-                    <small class="oswald" style="color: green">GÜNEŞ SİSTEMİ</small>
-                    <a href="notfound.html" class="text-white"><h2>'Omuamua': Kızıl, Yuvarlak ve Sessiz</h2></a>
+    </div>
+
+
+    <div class="text-white article-container pt-5">
+        <h2 class="text-center mb-5">BENZER KONULAR</h2>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 mb-4 mr-md-2">
+                <a href="notfound.html" class="news-img"> <img src="images/benzerkonular/1.jpg"
+                        class="img-fluid float-left mr-3 similar-topics"> </a>
+                <small class="oswald" style="color: green">GÜNEŞ SİSTEMİ</small>
+                <a href="notfound.html" class="text-white">
+                    <h2>'Omuamua': Kızıl, Yuvarlak ve Sessiz</h2>
+                </a>
+            </div>
+            <div class="col-md-4 ml-md-2">
+                <a href="notfound.html" class="news-img"> <img src="images/benzerkonular/2.jpg"
+                        class="img-fluid float-left mr-3 similar-topics"> </a>
+                <small class="oswald" style="color: green">YILDIZLARARASI CİSİMLER</small>
+                <a href="notfound.html" class="text-white">
+                    <h2>Yıldızlararası Bir Misafirimiz Var</h2>
+                </a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer">
+        <div class="container-fluid footer-bg">
+            <div class="row py-5 mx-5">
+                <div class="col-lg-2"></div>
+                <div class="col-sm-12">
+                    <div class="row text-center">
+                        <div class="col-12 mb-3">
+                            
+                            <i class="fa fa-facebook-official text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            
+                            <a href="https://github.com/seaque" class="news-a">
+                                <i class="fa fa-github-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            </a>
+                            
+                            <i class="fa fa-twitter-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            
+                            <i class="fa fa-google-plus-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                            
+                            <i class="fa fa-reddit-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-outline-secondary btn-rounded text-muted">HABER
+                                BÜLTENİNE ABONE OLUN</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 ml-md-2">
-                    <a href="notfound.html" class="news-img"> <img src="images/benzerkonular/2.jpg" class="img-fluid float-left mr-3 similar-topics"> </a>
-                    <small class="oswald" style="color: green">YILDIZLARARASI CİSİMLER</small>
-                    <a href="notfound.html" class="text-white"><h2>Yıldızlararası Bir Misafirimiz Var</h2></a>
-                </div>
-                <div class="col-md-2"></div>
+                <div class="col-lg-2"></div>
+            </div>
+            <div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
+                <a href="https://mdbootstrap.com/"> MDBootstrap</a> n Me
             </div>
         </div>
-        
-        
-        <footer class="page-footer">
-            <div class="container-fluid footer-bg">
-                <div class="row py-5 mx-5">
-                    <div class="col-lg-2"></div>
-                    <div class="col-md-6 col-lg-4 mt-3 mb-3 mb-md-0">
-                        <span class="text-white">Evren Ağacı</span>
-                        <br>
-                        <small class="text-white text-muted">Evren Ağacı ismini evrenin milyarlarca farklı şekilde <br> evrimleşerek dallanmasından esinlenerek almıştır.</small>
-                    
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="row text-center">
-                        <div class="col-md-12 mb-3">
-                            <a href="https://facebook.com/seaquee" style="font-size: 25px" class="news-a"> 
-                                <i class="fa fa-facebook-official text-white mr-md-2 mr-3"></i> 
-                            </a>
-                            <a href="https://github.com/seaque" style="font-size: 25px" class="news-a">
-                                <i class="fa fa-github-square text-white mr-md-2 mr-3"></i>
-                            </a>
-                            <a href="#" class="news-a">
-                                <i class="fa fa-twitter-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
-                            </a>
-                            <a href="https://google.com">
-                                <i class="fa fa-google-plus-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
-                            </a>
-                            <a href="#" class="news-a">
-                                <i class="fa fa-reddit-square text-white mr-md-2 mr-3" style="font-size: 25px"></i>
-                            </a>
-                        </div>
-                            <div class="col-md-12">
-                            <button type="button" class="btn btn-outline-secondary btn-rounded text-muted">HABER BÜLTENİNE ABONE OLUN</button>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
-                    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> n Me
-                </div>
-            </div>
-        </footer>
-        
-    </body>
-    
+    </footer>
+
+</body>
+
 </html>
